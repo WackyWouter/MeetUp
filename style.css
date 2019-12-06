@@ -1,0 +1,119 @@
+#map {
+  height: 50%;
+  width: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#right-panel{
+  height: 800px;
+  width: 100%;
+  overflow: scroll;
+}
+#title{
+  text-align: center;
+  margin-top: 10px;
+}
+
+#adresGrid{
+  padding:5px;
+  display:grid;
+  width: 90%;
+  margin:0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas:  "adres1L adres1 adres1"
+                        "adres2L adres2 adres2"
+                        "adres3L adres3 adres3";
+}
+
+#formGrid{
+  padding:5px;
+  display:grid;
+  width: 90%;
+  margin:0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas:  "enter midden ."
+                        "transportL transport ."
+                        "meetingPointL meetingPoint ."
+                        "radiusL radius radius"
+                        "nearby . .";
+}
+
+.option{
+  padding: 5px;
+  text-align: center;
+}
+.optionBtn{
+  width:50%;
+  display: block;
+  margin:0 auto;
+  margin-bottom: 18px;
+  margin-top: 10px;
+}
+.optionTitle{
+  margin-bottom: 5px;
+}
+.optionImg{
+  margin: 5px;
+}
+.optionP{
+  margin-top: 5px;
+  margin-bottom:5px;
+}
+
+
+
+#adres1L{
+  grid-area: adres1L;
+}
+#adres1{
+  grid-area: adres1;
+}
+#adres2L{
+  grid-area: adres2L;
+}
+#adres2{
+  grid-area: adres2;
+}
+#adres3L{
+  grid-area: adres3L;
+}
+#adres3{
+  grid-area: adres3;
+}
+#enter{
+  grid-area:enter;
+}
+#midden{
+  grid-area:midden;
+}
+#nearby{
+  grid-area:nearby;
+}
+#transportL{
+  grid-area:transportL;
+}
+#transport{
+  grid-area:transport;
+}
+#meetingPointL{
+  grid-area:meetingPointL;
+}
+#meetingPoint{
+  grid-area:meetingPoint;
+}
+#radiusL{
+  grid-area:radiusL;
+}
+#radius{
+  grid-area:radius;
+}
